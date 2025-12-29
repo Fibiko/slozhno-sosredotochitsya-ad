@@ -186,6 +186,12 @@
 .article__text {
   font-size: inherit;
   line-height: inherit;
+  color: rgba(241, 178, 206, 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .article__link {
