@@ -1,4 +1,3 @@
-/* Светлая тема принудительно через класс */
 :root.theme-light {
   --bg-color: #FFF1F7;
   --text-color: #353430;
