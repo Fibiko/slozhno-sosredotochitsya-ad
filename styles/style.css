@@ -169,6 +169,11 @@
   font-weight: var(--font-weight-bold);
   margin-bottom: 20px;
   margin-top: 50px;
+  color: rgba(255, 0, 112, 1);
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 23.4px;
+  text-align: left;
 }
 
 .article {
@@ -228,7 +233,7 @@
 
 .gallery__grid {
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 
 .gallery__image {
@@ -260,6 +265,9 @@
   .header__subtitle {
     justify-self: start;
     width: 100%;
+  }
+  .gallery__image {
+    margin-top: 10px;
   }
 }
 @media (width >= 768px) {
