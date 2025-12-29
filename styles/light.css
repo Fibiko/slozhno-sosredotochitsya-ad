@@ -1,4 +1,4 @@
-
+/* Светлая тема принудительно через класс */
 :root.theme-light {
   --bg-color: #FFF1F7;
   --text-color: #353430;
@@ -7,6 +7,7 @@
   --subtitle-color: #353430;
   --header-bg-image: url('../images/cover-image-light.png');
   --page-bg-color: #FFF1F7;
+  --section-title-color: #353430; 
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,6 +19,31 @@
     --subtitle-color: #353430;
     --header-bg-image: url('../images/cover-image-light.png');
     --page-bg-color: #FFF1F7;
+    --section-title-color: #353430; 
+  }
+}
+
+:root:has(#theme-light:checked) {
+  --bg-color: #FFF1F7;
+  --text-color: #353430;
+  --accent-color: #FF8DCB;
+  --title-color: #FFC2E6;
+  --subtitle-color: #353430;
+  --header-bg-image: url('../images/cover-image-light.png');
+  --page-bg-color: #FFF1F7;
+  --section-title-color: #353430; 
+}
+
+@media (prefers-color-scheme: light) {
+  :root:has(#theme-auto:checked) {
+    --bg-color: #FFF1F7;
+    --text-color: #353430;
+    --accent-color: #FF8DCB;
+    --title-color: #FFC2E6;
+    --subtitle-color: #353430;
+    --header-bg-image: url('../images/cover-image-light.png');
+    --page-bg-color: #FFF1F7;
+    --section-title-color: #353430; 
   }
 }
 

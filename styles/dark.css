@@ -21,6 +21,7 @@
   --subtitle-color: #000028;
   --header-bg-image: url('../images/cover-image-dark.png');
   --page-bg-color: #000028;
+  --section-title-color: #FF0070;
 }
 
 :root:has(#theme-light:checked) {
@@ -31,6 +32,7 @@
   --subtitle-color: #353430;
   --header-bg-image: url('../images/cover-image-light.png');
   --page-bg-color: #FFF1F7;
+  --section-title-color: #FF0070;
 }
 
 :root:has(#theme-auto:checked) {
@@ -41,6 +43,7 @@
   --subtitle-color: #000028;
   --header-bg-image: url('../images/cover-image-dark.png');
   --page-bg-color: #000028;
+  --section-title-color: #FF0070;
 }
 
 @media (prefers-color-scheme: light) {
@@ -52,6 +55,7 @@
     --subtitle-color: #353430;
     --header-bg-image: url('../images/cover-image-light.png');
     --page-bg-color: #FFF1F7;
+    --section-title-color: #FF0070;
   }
   
   :root:has(#theme-light:checked) .header__decor,
