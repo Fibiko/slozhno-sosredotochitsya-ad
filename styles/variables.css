@@ -4,7 +4,7 @@
   --accent-color: #FF0070;
   --title-color: #DB00FF;
   --subtitle-color: #000028;
-  
+
   --main-font: 'IBM Plex mono', monospace;
   --font-size-base: 18px;
   --font-weight-normal: 400;
@@ -20,5 +20,7 @@
   --content-width-tablet: 728px;
   --content-width-desktop: 1024px;
   
-  --bg-image: url('../images/cover-image-dark.png');
+  --header-bg-image: url('../images/cover-image-dark.png');
+  
+  --page-bg-color: #000028;
 }

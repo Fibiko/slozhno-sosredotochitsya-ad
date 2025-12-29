@@ -1,7 +1,4 @@
-/* Сброс стилей и базовые настройки */
 .page__body {
-  margin: 0;
-  padding: 0;
   font-family: var(--main-font);
   font-size: var(--font-size-base);
   line-height: 1.3;
@@ -10,7 +7,6 @@
   min-height: 100vh;
 }
 
-/* Общие стили */
 .link {
   color: inherit;
   text-decoration: none;
@@ -65,7 +61,6 @@
   border-right: 1px solid var(--accent-color);
 }
 
-/* Шапка с фоновым изображением */
 .header {
   position: relative;
   display: grid;
@@ -85,7 +80,6 @@
   align-self: center;
 }
 
-/* Скрытые радиокнопки */
 .header__theme-menu-input {
   position: absolute;
   width: 1px;
@@ -139,7 +133,6 @@
   outline-offset: 2px;
 }
 
-/* Активное состояние кнопки при выборе темы через CSS */
 #theme-light:checked ~ .header__theme-menu-list [for="theme-light"],
 #theme-auto:checked ~ .header__theme-menu-list [for="theme-auto"],
 #theme-dark:checked ~ .header__theme-menu-list [for="theme-dark"] {
@@ -193,7 +186,6 @@
   font-weight: var(--font-weight-bold);
 }
 
-/* Основной контент */
 .content {
   padding: var(--gap-large) var(--gap-medium);
   display: grid;
@@ -209,18 +201,16 @@
   font-size: inherit;
   margin: 0;
   padding: 0;
+  color: var(--accent-color); 
 }
 
 .article__title {
-  color: var(--accent-color);
   font-weight: var(--font-weight-bold);
   font-size: inherit;
   margin: 0 0 var(--gap-small);
 }
 
 .article__subtitle {
-  color: var(--subtitle-color);
-  background-color: var(--accent-color);
   font-weight: var(--font-weight-normal);
   font-size: inherit;
   margin: var(--gap-medium) 0 var(--gap-small);
@@ -243,6 +233,7 @@
 .gallery__title {
   font-size: inherit;
   margin: 0;
+  color: var(--accent-color); /* Добавлено */
 }
 
 .gallery__grid {
