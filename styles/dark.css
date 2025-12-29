@@ -4,7 +4,8 @@
   --accent-color: #FF0070;
   --title-color: #DB00FF;
   --subtitle-color: #000028;
-  --bg-image: url('../images/cover-image-dark.png');
+  --header-bg-image: url('../images/cover-image-dark.png');
+  --page-bg-color: #000028;
 }
 
 :root.theme-dark .header__decor,
@@ -18,7 +19,8 @@
   --accent-color: #FF0070;
   --title-color: #DB00FF;
   --subtitle-color: #000028;
-  --bg-image: url('../images/cover-image-dark.png');
+  --header-bg-image: url('../images/cover-image-dark.png');
+  --page-bg-color: #000028;
 }
 
 :root:has(#theme-light:checked) {
@@ -27,7 +29,8 @@
   --accent-color: #FF8DCB;
   --title-color: #FFC2E6;
   --subtitle-color: #353430;
-  --bg-image: url('../images/cover-image-light.png');
+  --header-bg-image: url('../images/cover-image-light.png');
+  --page-bg-color: #FFF1F7;
 }
 
 :root:has(#theme-auto:checked) {
@@ -36,23 +39,23 @@
   --accent-color: #FF0070;
   --title-color: #DB00FF;
   --subtitle-color: #000028;
-  --bg-image: url('../images/cover-image-dark.png');
+  --header-bg-image: url('../images/cover-image-dark.png');
+  --page-bg-color: #000028;
 }
 
-:root:has(#theme-auto:checked) {
-  @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
+  :root:has(#theme-auto:checked) {
     --bg-color: #FFF1F7;
     --text-color: #353430;
     --accent-color: #FF8DCB;
     --title-color: #FFC2E6;
     --subtitle-color: #353430;
-    --bg-image: url('../images/cover-image-light.png');
+    --header-bg-image: url('../images/cover-image-light.png');
+    --page-bg-color: #FFF1F7;
   }
-}
-
-:root:has(#theme-light:checked) .header__decor,
-:root:has(#theme-auto:checked):not(:has(#theme-dark:checked)) .header__decor {
-  @media (prefers-color-scheme: light) {
+  
+  :root:has(#theme-light:checked) .header__decor,
+  :root:has(#theme-auto:checked) .header__decor {
     display: none;
   }
 }

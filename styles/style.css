@@ -6,11 +6,7 @@
   font-size: var(--font-size-base);
   line-height: 1.3;
   color: var(--text-color);
-  background-color: var(--bg-color);
-  background-image: var(--bg-image);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: var(--page-bg-color);
   min-height: 100vh;
 }
 
@@ -69,7 +65,7 @@
   border-right: 1px solid var(--accent-color);
 }
 
-/* Шапка */
+/* Шапка с фоновым изображением */
 .header {
   position: relative;
   display: grid;
@@ -77,6 +73,11 @@
   padding: var(--gap-medium);
   min-height: var(--header-height);
   box-sizing: border-box;
+  background-color: var(--page-bg-color);
+  background-image: var(--header-bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header__theme-menu {
@@ -107,9 +108,14 @@
   padding: 0;
 }
 
+.header__theme-menu-item {
+  display: flex;
+  justify-content: center;
+}
+
 .header__theme-menu-button {
   display: inline-block;
-  border: none;
+  border: 1px solid transparent;
   padding: 2px 12px;
   background: transparent;
   color: var(--accent-color);
@@ -129,28 +135,17 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  outline: 1px solid currentColor;
+  outline-offset: 2px;
 }
 
+/* Активное состояние кнопки при выборе темы через CSS */
 #theme-light:checked ~ .header__theme-menu-list [for="theme-light"],
 #theme-auto:checked ~ .header__theme-menu-list [for="theme-auto"],
 #theme-dark:checked ~ .header__theme-menu-list [for="theme-dark"] {
   border: 1px solid var(--accent-color);
   pointer-events: none;
 }
-
-#theme-light:checked ~ .header__theme-menu-list [for="theme-light"]::before,
-#theme-auto:checked ~ .header__theme-menu-list [for="theme-auto"]::before,
-#theme-dark:checked ~ .header__theme-menu-list [for="theme-dark"]::before {
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-
 
 .header__decor {
   position: absolute;
@@ -187,7 +182,6 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   margin: 0;
   align-self: center;
-  margin-bottom: 55px;
 }
 
 .header__text {
@@ -197,7 +191,6 @@
   padding: 0;
   margin: 0;
   font-weight: var(--font-weight-bold);
-  margin-bottom: 56px;
 }
 
 /* Основной контент */
@@ -263,74 +256,14 @@
   object-fit: cover;
 }
 
-/* Форма */
-.form {
-  display: grid;
-  gap: var(--gap-medium);
-}
-
-.form__field {
-  display: grid;
-  gap: 5px;
-}
-
-.form__label {
-  color: var(--accent-color);
-}
-
-.form__input,
-.form__textarea {
-  padding: 8px;
-  background: transparent;
-  border: 1px solid var(--accent-color);
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.form__textarea {
-  resize: vertical;
-}
-
-.form__checkbox {
-  display: flex;
-  align-items: center;
-  gap: var(--gap-small);
-}
-
-.form__checkbox-input {
-  width: 16px;
-  height: 16px;
-}
-
-.form__checkbox-label {
-  font-size: 14px;
-}
-
-.form__submit {
-  padding: 8px 16px;
-  background: transparent;
-  border: 1px solid var(--accent-color);
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  justify-self: start;
-}
-
-.form__submit:hover {
-  background: var(--accent-color);
-  color: var(--subtitle-color);
-}
-
-/* Футер */
 .footer {
   position: relative;
-  display: grid;
-  place-items: center;
-  padding: var(--gap-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: var(--header-height);
   box-sizing: border-box;
+  background-color: var(--page-bg-color);
 }
 
 .footer__title {
@@ -341,14 +274,6 @@
   margin: 0;
 }
 
-.footer__text {
-  position: absolute;
-  bottom: var(--gap-medium);
-  left: var(--gap-medium);
-  margin: 0;
-}
-
-/* Адаптивность для планшетов */
 @media (width >= 768px) {
   .header {
     padding: var(--gap-large);
@@ -406,8 +331,12 @@
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
+  
+  .footer__text {
+    left: var(--gap-large);
+    bottom: var(--gap-large);
+  }
 }
-
 
 @media (width >= 1024px) {
   .header__theme-menu {
