@@ -1,15 +1,24 @@
 :root {
   --bg-color: #000028;
-  --text-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
+  --text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --title-color: #DB00FF;
   --subtitle-color: #000028;
-  --decorated-color: #ff0070;
-  --button-hover-color: rgba(255, 0, 112, 0.4);
-  --bg-image: url(../images/cover-image-dark.png);
-  --header-title-shadow: 4px 4px 0px #ff0070;
-  --section-title-color: #ff0070;
-  --card-title-color: #000028;
-  --link-shadow: 2px 2px 0px var(--accent-color);
-  --link-hover-color: #f1b2ce;
+  
+  --main-font: 'IBM Plex mono', monospace;
+  --font-size-base: 18px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  
+  --gap-small: 10px;
+  --gap-medium: 20px;
+  --gap-large: 40px;
+  --section-gap: 50px;
+  
+  --header-height: 100vh;
+  --content-width-mobile: 355px;
+  --content-width-tablet: 728px;
+  --content-width-desktop: 1024px;
+  
+  --bg-image: url('../images/cover-image-dark.png');
 }
