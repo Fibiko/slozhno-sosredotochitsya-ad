@@ -246,7 +246,13 @@
   text-shadow: var(--header-title-shadow);
 }
 
-/* Адаптив для планшетов (768px+) */
+@media (width <= 375px) {
+  .header__subtitle {
+    justify-self: start; 
+    width: 100%; 
+  }
+}
+
 @media (width >= 768px) {
   .header {
     padding: 20px;
