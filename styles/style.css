@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-.page_ {
+.page {
   margin: 0 auto;
   padding: 0 10px;
   font-family: var(--main-font);
