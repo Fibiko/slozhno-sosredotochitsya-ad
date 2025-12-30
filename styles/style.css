@@ -2,6 +2,11 @@
   background-attachment: fixed;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .page__body {
   margin: 0 auto;
   padding: 0 10px;
@@ -281,12 +286,6 @@
 @media (width >= 768px) {
   .header {
     padding: var(--gap-medium);
-  }
-
-  .header__theme-menu {
-    justify-self: center;
-    align-self: start;
-    margin-top: 10px;
   }
   
   .header__decor {
