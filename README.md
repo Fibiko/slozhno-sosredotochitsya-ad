@@ -1,1 +1,1 @@
-https://github.com/Fibiko/slozhno-sosredotochitsya-ad#
+https://github.com/Fibiko/slozhno-sosredotochitsya-ad.git
