@@ -6,7 +6,7 @@
   --subtitle-color: #353430;
   --header-bg-image: url('../images/cover-image-light.png');
   --page-bg-color: #FFF1F7;
-  --section-title-color: #353430; 
+  --section-title-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,7 +18,7 @@
     --subtitle-color: #353430;
     --header-bg-image: url('../images/cover-image-light.png');
     --page-bg-color: #FFF1F7;
-    --section-title-color: #353430; 
+    --section-title-color: #353430;
   }
 }
 
@@ -30,7 +30,7 @@
   --subtitle-color: #353430;
   --header-bg-image: url('../images/cover-image-light.png');
   --page-bg-color: #FFF1F7;
-  --section-title-color: #353430; 
+  --section-title-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,7 +42,7 @@
     --subtitle-color: #353430;
     --header-bg-image: url('../images/cover-image-light.png');
     --page-bg-color: #FFF1F7;
-    --section-title-color: #353430; 
+    --section-title-color: #353430;
   }
 }
 

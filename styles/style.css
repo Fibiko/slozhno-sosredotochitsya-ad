@@ -347,11 +347,6 @@
     display: flex;
     flex-direction: column;
   }
-
-  .content__section:nth-of-type(2) .content__section-body {
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 @media (width >= 1024px) {
@@ -380,5 +375,11 @@
   
   .gallery__grid {
     gap: var(--gap-medium);
+  }
+
+  .content__section:nth-of-type(2) .content__section-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
