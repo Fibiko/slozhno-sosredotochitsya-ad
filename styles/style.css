@@ -2,13 +2,7 @@
   background-attachment: fixed;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .page__body {
-  margin: 0 auto;
   padding: 0 10px;
   font-family: var(--main-font);
   font-size: var(--font-size-base);
