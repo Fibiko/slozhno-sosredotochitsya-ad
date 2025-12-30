@@ -92,7 +92,7 @@
 .header__theme-menu {
   justify-self: end;
   align-self: start;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .header__theme-menu-input {
@@ -127,7 +127,7 @@
   border: 1px solid transparent;
   padding: 2px 12px;
   background: transparent;
-  color: var(--accent-color);
+  color: var(--section-title-color);
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
@@ -136,7 +136,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--section-title-color);
 }
 
 .header__theme-menu-button:focus {
@@ -151,7 +151,7 @@
 #theme-light:checked ~ .header__theme-menu-list [for="theme-light"],
 #theme-auto:checked ~ .header__theme-menu-list [for="theme-auto"],
 #theme-dark:checked ~ .header__theme-menu-list [for="theme-dark"] {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--section-title-color);
   pointer-events: none;
 }
 
