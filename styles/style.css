@@ -282,6 +282,12 @@
   .header {
     padding: var(--gap-medium);
   }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+    margin-top: 10px;
+  }
   
   .header__decor {
     top: var(--gap-medium);
